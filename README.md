@@ -65,7 +65,25 @@ Spring 通过任务执行器 (TaskExecutor) 来实现多线程和并发编程. �
 ####3.4 条件注解 @Conditional
 ####3.5 组合注解与元注解
 ####3.6 @Enable* 注解的工作原理
-没做1
+##### 第一部分
+   * @EnableAspectJAutoProxy 开启对 AspectJ 自动代理的支持
+   * @EnableAsync 开启异步方法的支持
+   * @EnableScheduling 开启计划任务的支持
+   
+##### 第二部分
+   * @EnableWebMvc 开启 Web MVC 的配置支持
+   
+##### 第三部分
+   * @EnableConfigurationProperties 开启对 @ConfigurationProperties 注解配置 Bean 的支持
+   * @EnableJpaRepositories 开启对 Spring Data JPA Repository 的支持
+   * @EnableTransactionManagement 开启注解式事务的支持
+   * @EnableCaching 开启注解式的缓存支持
+    
+所有的@Enable*注解都有一个@Import 注解    
+   1. 直接导入配置类
+   2. 依据条件选择配置类
+   3. 动态注册 Bean
+   
 ##第二部分：点睛 Spring MVC 4.x
 ###第四章 Spring MVC 基础
 ####4.3 Spring MVC 的常用注解
