@@ -64,7 +64,6 @@ Spring 通过任务执行器 (TaskExecutor) 来实现多线程和并发编程. �
    
 ####3.4 条件注解 @Conditional
 ####3.5 组合注解与元注解
-未通过
 ####3.6 @Enable* 注解的工作原理
 没做1
 ##第二部分：点睛 Spring MVC 4.x
