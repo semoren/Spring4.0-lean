@@ -58,6 +58,10 @@ Spring 的事件需要遵循如下流程
 ####3.2 多线程
 Spring 通过任务执行器 (TaskExecutor) 来实现多线程和并发编程. 使用 ThreadPoolTaskExecutor 可实现一个基于线程的 TaskExecutor. 在配置类中通过@EnableAsync 开启对异步任务的支持, 并通过在实际执行的 Bean 的方法中使用@Async 注解来声明其是一个异步任务
 ####3.3 计划任务
+   * 对计划任务提供支持
+   * 使用 @EnableScheduling 开启计划任务支持
+   * 使用 @Scheduled 来注解计划任务的方法
+   
 ####3.4 条件注解 @Conditional
 ####3.5 组合注解与元注解
 ####3.6 @Enable* 注解的工作原理
