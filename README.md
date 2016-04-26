@@ -84,6 +84,9 @@ Spring 通过任务执行器 (TaskExecutor) 来实现多线程和并发编程. �
    2. 依据条件选择配置类
    3. 动态注册 Bean
    
+####3.7 测试
+ 
+  
 ##第二部分：点睛 Spring MVC 4.x
 ###第四章 Spring MVC 基础
 ####4.3 Spring MVC 的常用注解
